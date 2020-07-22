@@ -1,0 +1,185 @@
+// Layout rules
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#main {
+  flex: 1 0 auto;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+#footer {
+  .footer-main {
+    @include media-breakpoint-up(sm) {
+      padding: ($spacer * 3.65) ($spacer * 3.75);
+    }
+
+    > .row {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    }
+  }
+
+  .footer-below {
+    padding: 15px;
+    @include media-breakpoint-up(sm) {
+      padding-right: ($spacer * 3.75);
+      padding-left:  ($spacer * 3.75);
+    }
+  }
+}
+
+// Page layout styles
+
+.item-page {
+  position: relative;
+
+  &.page {
+    &:not(.section) {
+      > .container {
+        padding-top: 180px;
+
+        @include media-breakpoint-up(sm) {
+          padding-top: 280px;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.hero {
+  &.hero-section {
+    position: relative;
+  }
+}
+
+.hero-page {
+  height: 320px;
+
+  @include media-breakpoint-up(sm) {
+    // height: 700px;
+    height: 500px;
+  }
+}
+
+.hero-section {
+  display: flex;
+  height: 220px;
+
+  @include media-breakpoint-up(sm) {
+    height: 320px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 $spacer;
+    padding-bottom: 1.875rem;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 ($spacer * 3.75);
+      padding-bottom: 3.75rem;
+    }
+  }
+
+  h1 {
+    color: $white;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 8px;
+      margin-top: .5rem;
+      background-color: $brand-blue;
+
+      @include media-breakpoint-up(md) {
+        height: 12px;
+      }
+    }
+  }
+}
+
+.page-content {
+  padding: ($spacer * 1.5);
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    padding: ($spacer * 3.75);
+    padding-top: ($spacer * 2.8);
+  }
+}
+
+body:not(.homepage) {
+  [itemprop="articleBody"] {
+    margin-top: 1.5rem;
+  }
+}
+
+// Blog layout styles
+
+.blog {
+  &.page {
+    > .container {
+      padding-top: 180px;
+
+      @include media-breakpoint-up(sm) {
+        padding-top: 280px;
+      }
+    }
+  }
+
+  h2 {
+    display: inline-block;
+  }
+}
+
+.blog {
+  &:not(.card-blog) {
+    h2 {
+      &::after {
+        content: '';
+        display: block;
+        height: 4px;
+        margin-top: .25rem;
+        background-color: #4d9ebd;
+      }
+    }
+  }
+}
+
+.card-blog {
+  [class*="col-"] {
+    margin-bottom: $grid-gutter-width;
+  }
+}
+
+.moduletable {
+  &.tags {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.above-title {
+  + .page-header {
+    h2 {
+      margin-top: 0;
+    }
+  }
+}

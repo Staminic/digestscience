@@ -1,0 +1,569 @@
+// Hero images
+
+.hero {
+  background-color: $hero-bkg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // width: 100%;
+    // height: 220px;
+    //
+    // @include media-breakpoint-up(sm) {
+    //   height: 320px;
+    // }
+    z-index: -10;
+  }
+}
+
+// Foundation Parent Menu
+
+.parentItemId-559,
+.parentItemId-1506,
+.parentItemId-1509,
+.parentItemId-1576,
+.itemId-722,
+.itemId-1443,
+.catId-237 {
+  .hero {
+    background-image: url('../../../images/hero-images/fondation-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/fondation-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/fondation-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/fondation-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/fondation-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/fondation-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/fondation-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/fondation-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// Pathologies Parent Menu
+
+.parentItemId-560,
+.parentItemId-1512 {
+  .hero {
+    background-image: url('../../../images/hero-images/pathologies-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/pathologies-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/pathologies-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/pathologies-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/pathologies-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/pathologies-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/pathologies-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/pathologies-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// Actions Parent Menu
+
+.parentItemId-1518,
+.parentItemId-1520:not(.itemId-1565) {
+  .hero {
+    background-image: url('../../../images/hero-images/actions-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/actions-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/actions-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/actions-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/actions-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/actions-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/actions-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/actions-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// Nous soutenir Parent Menu
+
+.parentItemId-1527 {
+  .hero {
+    background-image: url('../../../images/hero-images/support-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/support-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/support-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/support-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/support-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/support-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/support-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/support-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// Vivre avec le maladie Parent Menu
+
+.itemId-1525,
+.parentItemId-1525 {
+  .hero {
+    background-image: url('../../../images/hero-images/valm-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/valm-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/valm-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/valm-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/valm-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/valm-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/valm-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/valm-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// News Parent Menu
+
+.itemId-1535,
+.parentItemId-1535 {
+  .hero {
+    background-image: url('../../../images/hero-images/news-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/news-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(sm) {
+      background-image: url('../../../images/hero-images/news-sm-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/news-sm-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/news-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/news-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/news-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/news-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+// Malades Menu
+
+.itemId-1550 {
+  .hero {
+    background-image: url('../../../images/hero-images/malades-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/malades-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/malades-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/malades-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/malades-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/malades-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Pros Menu
+
+.itemId-1551 {
+  .hero {
+    background-image: url('../../../images/hero-images/professionnels-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/professionnels-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/professionnels-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/professionnels-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/professionnels-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/professionnels-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Partenaires Menu
+
+.itemId-1552 {
+  .hero {
+    background-image: url('../../../images/hero-images/partenaires-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/partenaires-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/partenaires-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/partenaires-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/partenaires-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/partenaires-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Bénévoles Menu
+
+.itemId-1553 {
+  .hero {
+    background-image: url('../../../images/hero-images/benevoles-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/benevoles-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/benevoles-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/benevoles-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/benevoles-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/benevoles-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Projet Heroic
+
+.itemId-1546 {
+  .hero {
+    background-image: url('../../../images/hero-images/heroic-header-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/heroic-header-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/heroic-header-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/heroic-header-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/heroic-header-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/heroic-header-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Testathlon Homepage
+
+.itemId-433 {
+  .hero {
+    background-image: url('../../../images/hero-images/testathlon-home-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/testathlon-home-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/testathlon-home-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/testathlon-home-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/testathlon-home-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/testathlon-home-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Testathlon Page
+
+.catId-82,
+.parentItemId-433,
+.parentItemId-1630 {
+  .hero {
+    background-image: url('../../../images/hero-images/testathlon-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/testathlon-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/testathlon-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/testathlon-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/testathlon-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/testathlon-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// Team Page
+
+.catId-75,
+.parentItemId-429 {
+  .hero {
+    background-image: url('../../../images/hero-images/team-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/team-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/team-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/team-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/team-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/team-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+// P'tits ambassadeurs
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  .hero {
+    background-image: url('../../../images/hero-images/ptits-ambassadeurs-xs-lo.jpg');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../../../images/hero-images/ptits-ambassadeurs-xs-hi.jpg');
+    }
+
+    @include media-breakpoint-up(md) {
+      background-image: url('../../../images/hero-images/ptits-ambassadeurs-md-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/ptits-ambassadeurs-md-hi.jpg');
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('../../../images/hero-images/ptits-ambassadeurs-lg-lo.jpg');
+
+      @media (min-resolution: 192dpi) {
+        background-image: url('../../../images/hero-images/ptits-ambassadeurs-lg-hi.jpg');
+      }
+    }
+
+    &::before {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}

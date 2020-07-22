@@ -1,0 +1,328 @@
+// Team DigestSciences pages styles
+
+// General styles
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  h1, .h1,
+  h3, .h3 {
+    color: $gray;
+  }
+
+  h2, .h2,
+  h4, .h4 {
+    color: $team;
+  }
+
+  .key-figures {
+    color: $gray;
+  }
+
+  .accroche {
+    color: $team;
+  }
+}
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  .hero-section {
+    h1 {
+      color: $white;
+
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+// Navbar
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  .navbar {
+    background-color: $team;
+  }
+
+  .navbar-brand {
+    width: 280px;
+    max-width: 280px;
+
+    @include media-breakpoint-only(md) {
+      width: 150px;
+      max-width: 150px;
+    }
+  }
+}
+
+.catId-244 {
+  &.team-homepage {
+    .navbar {
+      background-color: rgba(0, 0, 0, .33);
+    }
+  }
+}
+
+// Main Nav Menu items
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  #main-nav {
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      color: $white;
+    }
+  }
+
+
+  #second-nav {
+    .nav-link {
+      @include media-breakpoint-up(md) {
+        color: $white;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .social-links {
+        a {
+          color: $white;
+        }
+
+        .fa-inverse {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+// Offcanvas Menu items
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  .navbar {
+    > .navbar-toggler {
+      color: $white;
+
+      em {
+        background-color: $white;
+
+        &::before,
+        &::after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.catId-244,
+.parentItemId-1624,
+.parentItemId-1623 {
+  @include media-breakpoint-down(sm) {
+    .offcanvas-collapse {
+      #main-nav {
+
+        .nav-link {
+          background-color: $team;
+        }
+
+        .nav-item {
+          &.item-1578 {
+            display: none;
+          }
+
+          &.item-1577 {
+            .nav-link {
+              background-color: $purple;
+            }
+          }
+
+          &.item-419 {
+            .nav-link {
+              background-color: $green;
+            }
+          }
+        }
+      }
+
+      #second-nav {
+        .nav-item {
+          &.item-1578 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Breadcrumbs
+
+.catId-244,
+.itemId-1623,
+.parentItemId-1623 {
+  .breadcrumb {
+    .breadcrumb-item {
+      &:first-child {
+          display: none;
+      }
+
+      &:nth-child(2) {
+        padding-left: 0;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+// Homepage
+
+.catId-244 {
+  &.ptits-ambassadeurs-homepage {
+
+    #main {
+      padding-top: 0;
+    }
+
+    .hero-page {
+      position: relative;
+      display: flex;
+      height: 420px;
+
+      @include media-breakpoint-up(md) {
+        height: 600px;
+      }
+
+      .container {
+        display: flex;
+        max-width: none;
+        justify-content: center;
+        align-items: flex-end;
+
+        h1 {
+          flex: 1;
+          margin-bottom: 0;
+          padding: $spacer;
+
+          @include media-breakpoint-up(md) {
+            padding: ($spacer * 4.5);
+          }
+
+          // background-color: rgba(0, 0, 0, .3);
+          color: $white;
+          font-size: 1.75rem;
+
+          @include media-breakpoint-up(md) {
+            font-size: $h1-font-size;
+          }
+
+          font-weight: $font-weight-medium;
+          text-align: center;
+        }
+      }
+    }
+
+    .item-page {
+      > .container {
+        position: relative;
+        padding: 0 !important;
+      }
+    }
+
+    [itemprop="articleBody"] {
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      [itemprop="articleBody"] {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.catId-244 {
+  .nav-pills {
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      height: 100px;
+      top: -50px;
+      right: 0;
+      left: 0;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 16rem;
+      line-height: $headings-line-height;
+      border: 5px solid $white;
+      border-radius: 0;
+      color: $white;
+      font-weight: $font-weight-medium;
+      text-align: center;
+      white-space: normal;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .nav-item {
+      display: flex;
+      margin: 0 $spacer;
+    }
+
+    .nav-item:nth-child(1) {
+      .nav-link {
+        background-color: $team;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// Outro
+
+.catId-244 {
+  &.team-digestscience-presentation {
+    .page-content {
+      padding-bottom: 0;
+    }
+
+    .outro {
+      background-color: #e97fa5;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: -3.75rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.catId-244 {
+  &.team-homepage {
+    .outro {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.catId-237 {
+  .navbar {
+    position: absolute;
+    background: none;
+  }
+
+  #main {
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+
+  .hero-section {
+    h1 {
+    	margin: 0;
+    	color: #fff;
+    	font-size: 2rem;
+    	font-weight: 600;
+    	text-align: center;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .page-content {
+    padding: 0;
+  }
+
+  .display-1 {
+    line-height: 1.125;
+  }
+
+  .key-figures {
+    margin-top: ($spacer * 2);
+    margin-bottom: ($spacer * 2);
+    padding-left: 1.5rem;
+    border-left: 4px solid #4D9EBD;
+    color: #4D9EBD;
+    font-size: 1.75rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.875rem;
+    }
+
+    ul {
+      margin-top: $spacer;
+    }
+
+    li {
+      margin-bottom: 1rem;
+
+      strong {
+        @include media-breakpoint-up(lg) {
+          font-size: 1.875rem;
+        }
+      }
+    }
+  }
+
+  footer {
+  	padding: 1rem;
+  	background-color: #495057;
+  	color: #fff;
+  	line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+
+    @include media-breakpoint-up(lg) {
+      padding: 2rem 5rem;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .col-md-8 {
+    	display: flex;
+    	justify-content: flex-end;
+    	align-items: flex-end;
+    }
+  }
+}
+
+.jumbotron[style] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.display-1 {
+  margin-bottom: ($spacer * 2);
+  color: $success;
+  line-height: $line-height-lg;
+  font-size: $h1-font-size;
+  font-weight: $font-weight-bold;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3.25rem;
+  }
+}
+
+.orange {
+  .display-1 {
+    color: $info;
+  }
+}
+
+.card--well {
+  margin-bottom: ($spacer * 2);
+  border-color: $black;
+  border-radius: 0;
+  font-size: $h5-font-size;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $h4-font-size;
+  }
+
+  p {
+    margin-bottom: .25rem;
+  }
+}

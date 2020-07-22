@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.8//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.8/template-install.dtd">
+
+<extension version="3.8" type="template" client="site" method="upgrade">
+
+	<name>digestscience</name>
+	<creationDate>2018-11-01</creationDate>
+	<author>Staminic</author>
+	<copyright>Copyright © 2018 staminic.com</copyright>
+	<authorEmail>contact@staminic.com</authorEmail>
+	<authorUrl>http://www.staminic.com</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[
+		<h1>DigestScience</h1>
+		<p>Created by <a href="http://www.staminic.com" target="_blank">Staminic | www.staminic.com</a>.</p>
+	]]></description>
+
+	<files>
+    <folder>js</folder>
+		<folder>scss</folder>
+    <folder>webfonts</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>gulpfile.js</filename>
+    <filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+    <filename>package-lock.json</filename>
+		<filename>package.json</filename>
+		<filename>README.md</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>main-navbar</position>
+		<position>second-navbar</position>
+		<position>breadcrumbs</position>
+		<position>component-above</position>
+		<position>component-below</position>
+		<position>home-slider</position>
+		<position>logos-slider</position>
+		<position>blog-above</position>
+		<position>blog-below</position>
+		<position>footer</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-below</position>
+		<position>footer-modules</position>
+		<position>debug</position>
+		<position>fixed</position>
+		<position>scripts</position>
+	</positions>
+
+</extension>

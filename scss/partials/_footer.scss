@@ -1,0 +1,80 @@
+// Footer
+
+#footer {
+  .nav-link {
+    color: $white;
+    border-left: 1px solid $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  address {
+    padding-left: 3.75rem;
+    color: $white;
+    font-size: $font-size-base;
+
+    & + p {
+      padding-left: 3.75rem;
+      font-weight: $font-weight-semibold;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  nav {
+    padding-left: 3.5rem;
+    font-size: 6px;
+
+    a {
+      color: $white;
+
+      .fa-inverse {
+        &::before {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+
+  background-color: $dark-gray;
+}
+
+.footer-below {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+
+  align-items: center;
+
+  .navbar-nav {
+    padding: 0 3rem;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+
+  .nav-link {
+    color: $black !important;
+    font-size: $font-size-base;
+    text-align: right;
+  }
+}

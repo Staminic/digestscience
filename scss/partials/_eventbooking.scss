@@ -1,0 +1,79 @@
+// Testatlon pages specific styles
+
+#eb-event-page {
+  .eb-box-heading {
+    background: none;
+    border: none;
+  }
+
+  .eb-description {
+    border: none;
+  }
+}
+
+#eb-registration-complete-page {
+  .control-group {
+    margin-bottom: $spacer;
+  }
+
+  .controls {
+    font-weight: 500;
+  }
+}
+
+#field_title {
+  label {
+    display: block;
+  }
+}
+
+form#adminForm label.control-label {
+  font-weight: 500 !important;
+}
+
+.eb-form-heading {
+  font-size: $font-size-body;
+}
+
+.eb-container .form-group input[type="text"] {
+  width: 100% !important;
+}
+
+.eb-container input[type="text"] {
+  box-sizing: inherit !important;
+}
+
+.form-actions {
+  margin-top: $spacer;
+}
+
+#eb-registration-complete-page {
+  .control-group {
+    .control-label {
+      display: inline-block;
+
+      &::after {
+        content: " : ";
+        display: inline-block;
+        margin-right: .25rem;
+      }
+    }
+
+    .controls {
+      display: inline-block;
+    }
+  }
+
+  .eb-message {
+    display: none !important;
+  }
+}
+
+.field-calendar {
+  display: flex;
+
+  .btn-secondary {
+    background-color: $black;
+    border-color: $black;
+  }
+}

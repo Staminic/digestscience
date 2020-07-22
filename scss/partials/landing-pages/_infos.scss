@@ -1,0 +1,58 @@
+.infos {
+  font-size: $font-size-base;
+
+  h3 {
+    position: relative;
+    padding-left: ($spacer * 2);
+    color: $gray-700;
+    font-size: $h4-font-size;
+
+    &::before {
+    	content: '';
+    	display: inline-block;
+    	width: 28px;
+    	height: 28px;
+    	position: absolute;
+    	top: 50%;
+      left: 0;
+    	transform: translateY(-50%);
+      background-image: url('../img/pictos.svg');
+      background-position: 0 center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .security {
+    h3 {
+      &::before {
+        background-position-x: -28px;
+      }
+    }
+  }
+
+  .invoice {
+    h3 {
+      &::before {
+        background-position-x: -56px;
+      }
+    }
+  }
+
+  .tax {
+    h3 {
+      &::before {
+        background-position-x: -84px;
+      }
+    }
+  }
+
+  .form-control {
+    border-color: $gray-700;
+  }
+
+  .input-group-text {
+    background-color: $gray-700;
+    border-color: $gray-700;
+    color: $white;
+  }
+}

@@ -1,0 +1,52 @@
+// Language switcher
+
+.mod-languages {
+  @include media-breakpoint-up(sm) {
+    margin-left: .5rem;
+    margin-right: .75rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 1.25rem;
+    margin-right: 2.25rem;
+  }
+
+  .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    span {
+      display: block;
+      position: relative;
+      padding-left: 1.5rem;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("../img/globe-africa-solid.svg");
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+      }
+    }
+  }
+
+  .nav-item {
+    margin: 0;
+
+    // &:first-child {
+    //   .nav-link {
+    //     span {
+    //       border-right: 1px solid $black;
+    //     }
+    //   }
+    // }
+  }
+}

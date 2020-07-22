@@ -1,0 +1,76 @@
+// TEMPLATE STYLES
+
+// bootstrap overrides only (taken from variables.scss)
+// hint: write values without !default
+
+$blue:    #00a0dd;
+$indigo:  #6610f2;
+$purple:  #b729b9;
+$pink:    #e83e8c;
+$red:     #ed0000;
+$orange:  #d38213;
+$yellow:  #ffc107;
+$green:   #3aba35;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$brand-blue: #4d9ebd;
+$primary: $brand-blue;
+$success: $purple;
+$donate-pink: #e500cb;
+$vivid-blue: #00a0dd;
+$testathlon: #195f2f;
+$testathlon2: #74af61;
+$team: #ed8fb9;
+$hero-bkg: #dadde1;
+$light-gray: $gray-200;
+$gray: #707070;
+$dark-gray: #4d4d4d;
+$light-blue: #d1ddf1;
+$outro-blue: #009fbf;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $brand-blue,
+    "secondary":  $donate-pink,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light-gray,
+    "dark":       $dark,
+    "gray":       $gray,
+    "white":      $white,
+    "black":      $black
+  ),
+  $theme-colors
+);
+
+$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+$font-family-condensed: 'Barlow Condensed', sans-serif;
+
+$font-size-body: ($font-size-base * 1.25); // 16px
+$font-size-little: ($font-size-base * 1.125); // 18px
+
+$h1-font-size: ($font-size-base * 3); // 48px
+$h1-font-size-up-md: ($font-size-base * 4); // 64px
+
+$h2-font-size: ($font-size-base * 2); // 32px
+$h2-font-size-up-md: ($font-size-base * 2.625); // 42px
+
+// $h3-font-size -> 28px
+$h4-font-size : $font-size-body; // 20px
+
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+.custom-control-label {
+  &::after {
+    top: ($font-size-body * $line-height-base - $custom-control-indicator-size) / 2 !important;
+  }
+
+  &::before {
+    top: ($font-size-body * $line-height-base - $custom-control-indicator-size) / 2 !important;
+  }
+}
