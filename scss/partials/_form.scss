@@ -89,25 +89,25 @@
   }
 
   .input-medium {
-  	display: block;
-  	width: 100%;
-  	height: calc(2.25rem + 2px);
-  	padding: 0.375rem 0.75rem;
-  	font-size: 1rem;
-  	line-height: 1.5;
-  	color: #495057;
-  	background-color: #fff;
-  	background-clip: padding-box;
-  	border: 1px solid #B729B9;
-  	border-radius: 0.25rem 0 0 .25rem;
-  	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #b729b9;
+    border-radius: 0.25rem 0 0 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 
   .input-group > .input-medium {
-  	position: relative;
-  	flex: 1 1 auto;
-  	width: 1%;
-  	margin-bottom: 0;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
   }
 
   #donation_type_input {
@@ -143,4 +143,12 @@
       border-color: $info;
     }
   }
+}
+
+.form-check .custom-control-input {
+  z-index: 1;
+  opacity: 1;
+  left: 0;
+  width: 1rem;
+  height: 1.25rem;
 }

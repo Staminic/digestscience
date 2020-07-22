@@ -55,7 +55,7 @@ form#adminForm label.control-label {
       &::after {
         content: " : ";
         display: inline-block;
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
     }
 
@@ -64,13 +64,22 @@ form#adminForm label.control-label {
     }
   }
 
-  .eb-message {
+  .eb-message,
+  #field_title_activites,
+  #field_Titre_tombola,
+  #field_Titre_don {
     display: none !important;
+  }
+
+  h4.eb-heading {
+    text-decoration: underline;
   }
 }
 
 .field-calendar {
-  display: flex;
+  .input-append {
+    display: flex;
+  }
 
   .btn-secondary {
     background-color: $black;
